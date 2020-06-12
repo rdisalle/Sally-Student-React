@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background: green;
+    color: white;
+}
+
+ul {
+    border: solid black 2px;
+    padding: 4px;
+}
+
+li {
+    list-style-type: none;
+  }

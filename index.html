@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally Student</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="application-root"></div>
+    
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+
+    function App(resume) {
+        console.log(resume)
+        return (
+        <body>
+        {resume.children}
+        </body>
+    );
+}
+    ReactDOM.render(
+        <App className='my-class'>
+        <h1>Sally Student</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about_me">About me</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+    <section>
+      <header>
+      <h2>Contact Info</h2>
+      </header>
+      <ul>
+        <li> <img src= "https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt= "Sally's Picture" width="150" height="200"></img></li>
+        <li> Sally Student </li>
+        <li> <a href="mailto:sally.student@gmail.comsubject=Employment" 
+        target="_blank">sally.student@gmail.com</a></li>
+        <li> (678) 555-3232 </li>
+        <li> <address> 3912 Student Blvd Atlanta, GA 30305 </address> </li>
+      </ul>
+    </section>
+    <h2>Education</h2>
+    <section>
+      <ul>
+        <li>University of Georgia - B.S. Computer Science</li>
+      </ul>
+    </section>
+    <header>
+    <h2> Job Experience </h2>
+    </header>
+    <section>
+      <ul>
+        <li>The Home Depot - Software Engineer - 01/2016-06/2018 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies finibus sem, non vestibulum lorem facilisis et. In at tincidunt leo. Aliquam erat volutpat. Proin nec erat eget ligula imperdiet scelerisque vitae a justo. Quisque sit amet diam malesuada, feugiat leo in, gravida dolor.</p> 
+        </li>
+        <li>Google - Software Engineer - 07/2018-Present
+          <p>Proin cursus nisi id vulputate interdum. Morbi quis turpis pellentesque, aliquet ligula eget, congue augue. Quisque purus ex, ultricies sit amet maximus vitae, pellentesque non velit. Nullam luctus aliquam urna, quis venenatis massa elementum a. Morbi sollicitudin rhoncus ornare.</p>
+        </li>
+      </ul>
+    </section>
+        </App>,
+        document.querySelector('#application-root')
+);
+    </script>
+</body>
+</html>
